@@ -1,12 +1,12 @@
 # RAG Chunk Strategy Lab
 
-基于 [RAG动态Chunk技术方案_2026.md](docs/RAG动态Chunk技术方案_2026.md) 的 LangChain 分块策略对比实验后端，并集成 **解析 / 检索 / 向量库** 三大实验模块。
+基于LangChain 分块策略对比实验后端，并集成 **解析 / 检索 / 向量库** 三大实验模块。
 
 **默认 LLM：DeepSeek**（`CHUNK_LLM_MODEL=deepseek-chat`），可通过环境变量或 Web「系统配置」切换。
 
 ## 仓库关系
 
-本目录为 **独立 Git 仓库**。配套前端：[rag_chunk_tui](../rag_chunk_tui/README.md)。父目录 `rag_space` 仅作本地工作区聚合，无统一 Git 根。
+本目录为 **独立 Git 仓库**。配套前端：[rag_chunk_tui](https://github.com/goodpostidea-tech/rag_chunk_tui)。
 
 ## 已实现分块策略
 
@@ -115,16 +115,6 @@ uv run python main.py papers fetch --all-arxiv
 | `/vstore/*` | 向量库压测 |
 | `/settings` `/settings/schema` | 系统配置（含 vision / ocr 组） |
 | `/health` | 健康检查与实验模块列表 |
-
-## Git：应提交 vs 忽略
-
-| 建议提交 | 不要提交 |
-|----------|----------|
-| 源码、`pyproject.toml`、`uv.lock`、`.env.example` | `.env`、`.venv/` |
-| `data/sample.txt`、`data/sample_qa.json`、`data/references_catalog.json`、`data/papers_qa.json`、`data/experiments/` | `data/chunk_lab.db*`（含 UI 保存的 API Key） |
-| `data/papers/.gitkeep` | `data/papers/*.txt`、`*.meta.json`、PDF |
-| `docs/` | `data/parse_samples/`（本地试跑目录）、`data/custom_qa.json`、`data/indexes/` |
-| | `.chroma_chunk_lab/`、`__pycache__/`、`.claude/` |
 
 首次克隆后执行 `cp .env.example .env`；论文语料需自行 `papers fetch`。
 
