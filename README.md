@@ -2,7 +2,7 @@
 
 [![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](LICENSE)
 
-基于 LangChain 分块策略对比实验后端，并集成 **解析 / 检索 / 向量库** 三大实验模块。
+基于 LangChain 分块策略对比实验后端，并集成 **解析 / 检索 / 向量库（待完善）** 三大实验模块。
 
 **默认 LLM：DeepSeek**（`CHUNK_LLM_MODEL=deepseek-chat`），可通过环境变量或 Web「系统配置」切换。
 
@@ -92,7 +92,7 @@ uv run python main.py papers fetch --id meta_chunking
 uv run python main.py papers fetch --all-arxiv
 ```
 
-抓取正文缓存于 `data/papers/{id}.txt`（**不提交 git**，见下方）。
+抓取正文缓存于 `data/papers/{id}.txt`
 
 ## 模型与向量库（`.env`）
 
