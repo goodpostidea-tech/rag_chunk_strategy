@@ -1,6 +1,8 @@
 # RAG Chunk Strategy Lab
 
-基于LangChain 分块策略对比实验后端，并集成 **解析 / 检索 / 向量库** 三大实验模块。
+[![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](LICENSE)
+
+基于 LangChain 分块策略对比实验后端，并集成 **解析 / 检索 / 向量库** 三大实验模块。
 
 **默认 LLM：DeepSeek**（`CHUNK_LLM_MODEL=deepseek-chat`），可通过环境变量或 Web「系统配置」切换。
 
@@ -121,3 +123,7 @@ uv run python main.py papers fetch --all-arxiv
 ## 可观测性
 
 默认关闭 LangSmith / Langfuse。开启方式见 `.env.example` 注释；`GET /health` 可查看当前状态。
+
+## 许可证
+
+本项目采用 [Apache License 2.0](LICENSE) 开源协议。Copyright © 2026 [goodpostidea-tech](https://github.com/goodpostidea-tech).
