@@ -1,0 +1,19 @@
+RAG 动态分块技术方案（示例文档）
+
+一、背景
+2025–2026 年的基准研究表明，分块配置对检索质量的影响可能不亚于嵌入模型选择。
+FloTorch 2026 测试显示：递归字符分割（512 token）准确率约 69%，而语义分块若不设最小 chunk 下限，
+平均仅 43 token，端到端表现反而更差。
+
+二、推荐基线
+通用场景建议从 256–512 token、10–25% 重叠开始。微软 Azure 推荐 512 token + 128 token 重叠作为起点。
+
+三、父子分块
+Parent-Child 策略用小 chunk（约 200 token）做向量检索，命中后返回大 chunk（约 800 token）供 LLM 阅读，
+兼顾检索精度与上下文完整性。
+
+四、语义分块注意点
+Semantic Chunker 在相似度骤降处切割，应设置 min_chunk_size（建议 150 token）防止过度碎片化。
+
+五、上下文增强
+Contextual Chunking 为每个 chunk 生成文档内位置说明前缀，Anthropic 官方测评可将检索失败率降低约 35–49%。

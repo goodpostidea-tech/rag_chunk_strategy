@@ -1,0 +1,637 @@
+[
+  {
+    "provider_id": "openai",
+    "provider_name": "OpenAI",
+    "provider_logo": "https://openai.com/favicon.ico",
+    "base_url": "https://api.openai.com/v1",
+    "website": "https://platform.openai.com",
+    "models": [
+      {
+        "model_id": "gpt-5.5",
+        "model_name": "GPT-5.5",
+        "type": "language",
+        "tags": ["flagship", "agentic", "reasoning"],
+        "context_window": 256000,
+        "note": "最新旗舰模型，2026年4月发布"
+      },
+      {
+        "model_id": "gpt-5.5-pro",
+        "model_name": "GPT-5.5 Pro",
+        "type": "language",
+        "tags": ["flagship", "reasoning", "high-effort"],
+        "context_window": 256000,
+        "note": "付费高端版，xhigh reasoning 模式"
+      },
+      {
+        "model_id": "gpt-5.4",
+        "model_name": "GPT-5.4",
+        "type": "language",
+        "tags": ["reasoning", "professional"],
+        "context_window": 1050000,
+        "note": "前一代旗舰，2026年3月发布"
+      },
+      {
+        "model_id": "gpt-5.4-mini",
+        "model_name": "GPT-5.4 Mini",
+        "type": "language",
+        "tags": ["cost-effective"],
+        "context_window": 256000,
+        "note": "高性价比版本"
+      },
+      {
+        "model_id": "gpt-5.4-nano",
+        "model_name": "GPT-5.4 Nano",
+        "type": "language",
+        "tags": ["lightweight", "api-only"],
+        "context_window": 128000,
+        "note": "仅 API 可用，极低成本"
+      },
+      {
+        "model_id": "gpt-4.1",
+        "model_name": "GPT-4.1",
+        "type": "multimodal",
+        "tags": ["coding", "long-context"],
+        "context_window": 1000000,
+        "note": "代码和长上下文优化，仍在活跃维护"
+      },
+      {
+        "model_id": "gpt-4.1-mini",
+        "model_name": "GPT-4.1 Mini",
+        "type": "language",
+        "tags": ["fast", "cost-effective"],
+        "context_window": 1000000,
+        "note": "轻量高速版"
+      },
+      {
+        "model_id": "gpt-4.1-nano",
+        "model_name": "GPT-4.1 Nano",
+        "type": "language",
+        "tags": ["lightweight"],
+        "context_window": 128000,
+        "note": "最小版本"
+      },
+      {
+        "model_id": "gpt-4o",
+        "model_name": "GPT-4o",
+        "type": "multimodal",
+        "tags": ["multimodal", "audio", "vision"],
+        "context_window": 128000,
+        "note": "支持文本/图像/音频，仍广泛使用"
+      },
+      {
+        "model_id": "gpt-4o-mini",
+        "model_name": "GPT-4o Mini",
+        "type": "multimodal",
+        "tags": ["fast", "cost-effective"],
+        "context_window": 128000,
+        "note": "轻量多模态版本"
+      },
+      {
+        "model_id": "o3",
+        "model_name": "o3",
+        "type": "language",
+        "tags": ["reasoning", "math", "science"],
+        "context_window": 200000,
+        "note": "强推理系列，已被 GPT-5.x 系列部分替代"
+      },
+      {
+        "model_id": "text-embedding-3-large",
+        "model_name": "text-embedding-3-large",
+        "type": "embedding",
+        "tags": ["embedding", "high-accuracy"],
+        "dimensions": 3072,
+        "note": "高精度嵌入模型，RAG 首选"
+      },
+      {
+        "model_id": "text-embedding-3-small",
+        "model_name": "text-embedding-3-small",
+        "type": "embedding",
+        "tags": ["embedding", "cost-effective"],
+        "dimensions": 1536,
+        "note": "轻量嵌入模型"
+      }
+    ]
+  },
+  {
+    "provider_id": "anthropic",
+    "provider_name": "Anthropic",
+    "provider_logo": "https://anthropic.com/favicon.ico",
+    "base_url": "https://api.anthropic.com/v1",
+    "website": "https://platform.claude.com",
+    "models": [
+      {
+        "model_id": "claude-opus-4-7",
+        "model_name": "Claude Opus 4.7",
+        "type": "multimodal",
+        "tags": ["flagship", "vision", "reasoning", "xhigh"],
+        "context_window": 1000000,
+        "note": "最新旗舰，2026年4月发布，SWE-bench 87.6%，xhigh reasoning"
+      },
+      {
+        "model_id": "claude-sonnet-4-6",
+        "model_name": "Claude Sonnet 4.6",
+        "type": "multimodal",
+        "tags": ["balanced", "recommended", "coding"],
+        "context_window": 1000000,
+        "note": "当前推荐生产模型，性价比最优，2026年2月发布"
+      },
+      {
+        "model_id": "claude-haiku-4-5",
+        "model_name": "Claude Haiku 4.5",
+        "type": "language",
+        "tags": ["fast", "cost-effective", "lightweight"],
+        "context_window": 200000,
+        "note": "高速低成本，2025年10月发布，适合大批量调用"
+      }
+    ]
+  },
+  {
+    "provider_id": "google",
+    "provider_name": "Google (Gemini)",
+    "provider_logo": "https://ai.google.dev/favicon.ico",
+    "base_url": "https://generativelanguage.googleapis.com/v1beta",
+    "website": "https://ai.google.dev",
+    "models": [
+      {
+        "model_id": "gemini-3.1-pro-preview",
+        "model_name": "Gemini 3.1 Pro Preview",
+        "type": "multimodal",
+        "tags": ["flagship", "long-context", "reasoning"],
+        "context_window": 2000000,
+        "note": "最新旗舰，2M 上下文，当前业内最大"
+      },
+      {
+        "model_id": "gemini-3.1-flash-preview",
+        "model_name": "Gemini 3.1 Flash Preview",
+        "type": "multimodal",
+        "tags": ["fast", "cost-effective", "agentic"],
+        "context_window": 1000000,
+        "note": "高速版，适合高吞吐量任务"
+      },
+      {
+        "model_id": "gemini-3.1-flash-lite-preview",
+        "model_name": "Gemini 3.1 Flash-Lite Preview",
+        "type": "multimodal",
+        "tags": ["lightweight", "high-volume"],
+        "context_window": 1000000,
+        "note": "最低成本版本，免费额度可用"
+      },
+      {
+        "model_id": "gemini-2.5-pro",
+        "model_name": "Gemini 2.5 Pro",
+        "type": "multimodal",
+        "tags": ["stable", "reasoning", "enterprise"],
+        "context_window": 1000000,
+        "note": "GA 稳定版，生产推荐"
+      },
+      {
+        "model_id": "gemini-2.5-flash",
+        "model_name": "Gemini 2.5 Flash",
+        "type": "multimodal",
+        "tags": ["fast", "stable", "cost-effective"],
+        "context_window": 1000000,
+        "note": "GA 稳定版，性价比最优"
+      },
+      {
+        "model_id": "gemini-2.5-flash-lite",
+        "model_name": "Gemini 2.5 Flash-Lite",
+        "type": "multimodal",
+        "tags": ["lightweight", "high-volume", "free-tier"],
+        "context_window": 1000000,
+        "note": "免费额度可用，高并发场景"
+      },
+      {
+        "model_id": "text-embedding-005",
+        "model_name": "text-embedding-005",
+        "type": "embedding",
+        "tags": ["embedding", "stable"],
+        "dimensions": 768,
+        "note": "稳定文本嵌入模型"
+      },
+      {
+        "model_id": "gemini-embedding-2-preview",
+        "model_name": "gemini-embedding-2-preview",
+        "type": "embedding",
+        "tags": ["embedding", "multimodal", "latest"],
+        "dimensions": 3072,
+        "note": "首个多模态嵌入模型，支持文本/图像/视频/音频/PDF"
+      }
+    ]
+  },
+  {
+    "provider_id": "deepseek",
+    "provider_name": "DeepSeek",
+    "provider_logo": "https://deepseek.com/favicon.ico",
+    "base_url": "https://api.deepseek.com/v1",
+    "website": "https://platform.deepseek.com",
+    "models": [
+      {
+        "model_id": "deepseek-v4-pro",
+        "model_name": "DeepSeek V4 Pro",
+        "type": "language",
+        "tags": ["flagship", "reasoning", "MoE", "long-context"],
+        "context_window": 1000000,
+        "note": "旗舰推理模型，1.6T 参数 MoE，2026年4月发布，推荐优先使用"
+      },
+      {
+        "model_id": "deepseek-v4-flash",
+        "model_name": "DeepSeek V4 Flash",
+        "type": "language",
+        "tags": ["fast", "cost-effective", "MoE"],
+        "context_window": 1000000,
+        "note": "轻量版，284B 总参数 / 13B 激活，极低成本，原 deepseek-chat 别名指向此模型"
+      },
+      {
+        "model_id": "deepseek-v3.2",
+        "model_name": "DeepSeek V3.2",
+        "type": "language",
+        "tags": ["open-weight", "reasoning", "tool-use"],
+        "context_window": 128000,
+        "note": "开源模型（MIT 协议），支持 thinking + tool-use 混合，可本地部署"
+      },
+      {
+        "model_id": "deepseek-r1",
+        "model_name": "DeepSeek R1",
+        "type": "language",
+        "tags": ["reasoning", "math", "open-weight"],
+        "context_window": 128000,
+        "note": "开源推理模型（MIT 协议），适合 STEM 类任务，可本地部署"
+      }
+    ]
+  },
+  {
+    "provider_id": "qwen",
+    "provider_name": "Qwen (Alibaba Cloud)",
+    "provider_logo": "https://dashscope.aliyuncs.com/favicon.ico",
+    "base_url": "https://dashscope.aliyuncs.com/compatible-mode/v1",
+    "website": "https://www.alibabacloud.com/help/en/model-studio",
+    "models": [
+      {
+        "model_id": "qwen3-max",
+        "model_name": "Qwen3 Max",
+        "type": "language",
+        "tags": ["flagship", "reasoning", "thinking", "search-agent"],
+        "context_window": 32768,
+        "note": "旗舰推理模型，支持 thinking/non-thinking 切换，内置搜索 agent"
+      },
+      {
+        "model_id": "qwen3.5-plus",
+        "model_name": "Qwen3.5 Plus",
+        "type": "multimodal",
+        "tags": ["multimodal", "video", "image", "long-context"],
+        "context_window": 1000000,
+        "note": "多模态旗舰，支持文本/图像/视频输入，2026年4月发布"
+      },
+      {
+        "model_id": "qwen3.6-flash",
+        "model_name": "Qwen3.6 Flash",
+        "type": "multimodal",
+        "tags": ["fast", "multimodal", "cost-effective"],
+        "context_window": 1000000,
+        "note": "新一代高速多模态模型，2026年4月发布"
+      },
+      {
+        "model_id": "qwen-plus",
+        "model_name": "Qwen Plus",
+        "type": "language",
+        "tags": ["balanced", "cost-effective"],
+        "context_window": 32768,
+        "note": "性价比平衡版，适合中等复杂度任务"
+      },
+      {
+        "model_id": "qwen-flash",
+        "model_name": "Qwen Flash",
+        "type": "language",
+        "tags": ["fast", "lightweight"],
+        "context_window": 32768,
+        "note": "轻量高速，替代已停更的 Qwen-Turbo"
+      },
+      {
+        "model_id": "text-embedding-v3",
+        "model_name": "text-embedding-v3",
+        "type": "embedding",
+        "tags": ["embedding", "multilingual"],
+        "dimensions": 1536,
+        "note": "通用文本嵌入，支持多语言"
+      },
+      {
+        "model_id": "qwen3-embedding-8b",
+        "model_name": "Qwen3-Embedding-8B",
+        "type": "embedding",
+        "tags": ["embedding", "multilingual", "state-of-the-art", "open-weight"],
+        "dimensions": 4096,
+        "note": "MTEB 多语言榜第一（2025年6月，70.58），开源可本地部署"
+      },
+      {
+        "model_id": "qwen3-embedding-4b",
+        "model_name": "Qwen3-Embedding-4B",
+        "type": "embedding",
+        "tags": ["embedding", "multilingual", "balanced", "open-weight"],
+        "dimensions": 2560,
+        "note": "中等规模嵌入，性价比均衡"
+      },
+      {
+        "model_id": "qwen3-embedding-0.6b",
+        "model_name": "Qwen3-Embedding-0.6B",
+        "type": "embedding",
+        "tags": ["embedding", "lightweight", "open-weight"],
+        "dimensions": 1024,
+        "note": "轻量嵌入，适合本地部署或高并发场景"
+      }
+    ]
+  },
+  {
+    "provider_id": "mistral",
+    "provider_name": "Mistral AI",
+    "provider_logo": "https://mistral.ai/favicon.ico",
+    "base_url": "https://api.mistral.ai/v1",
+    "website": "https://platform.mistral.ai",
+    "models": [
+      {
+        "model_id": "mistral-large-2512",
+        "model_name": "Mistral Large 3",
+        "type": "multimodal",
+        "tags": ["flagship", "open-weight", "MoE", "vision"],
+        "context_window": 262144,
+        "note": "旗舰开源模型（Apache 2.0），675B MoE，2025年12月发布，LMArena 开源榜第二"
+      },
+      {
+        "model_id": "mistral-medium-2505",
+        "model_name": "Mistral Medium 3.5",
+        "type": "multimodal",
+        "tags": ["balanced", "vision", "reasoning", "agentic"],
+        "context_window": 262144,
+        "note": "128B dense 模型，支持可配置 reasoning effort，2025年12月发布"
+      },
+      {
+        "model_id": "mistral-small-2503",
+        "model_name": "Mistral Small 3.1",
+        "type": "multimodal",
+        "tags": ["fast", "cost-effective", "vision"],
+        "context_window": 131072,
+        "note": "轻量版，支持图像输入"
+      },
+      {
+        "model_id": "codestral-2501",
+        "model_name": "Codestral 2501",
+        "type": "language",
+        "tags": ["code", "autocompletion", "80+ languages"],
+        "context_window": 262144,
+        "note": "代码专用模型，支持 80+ 编程语言，代码补全优化"
+      },
+      {
+        "model_id": "devstral-small-2505",
+        "model_name": "Devstral Small",
+        "type": "language",
+        "tags": ["code", "agentic", "lightweight"],
+        "context_window": 131072,
+        "note": "小型代码 agent 模型"
+      },
+      {
+        "model_id": "mistral-embed",
+        "model_name": "Mistral Embed",
+        "type": "embedding",
+        "tags": ["embedding", "RAG", "semantic-search"],
+        "dimensions": 1024,
+        "note": "文本嵌入模型，RAG 场景优化"
+      },
+      {
+        "model_id": "codestral-embed",
+        "model_name": "Codestral Embed",
+        "type": "embedding",
+        "tags": ["embedding", "code", "RAG"],
+        "dimensions": 1024,
+        "note": "代码专用嵌入模型，代码库检索首选"
+      }
+    ]
+  },
+  {
+    "provider_id": "jina",
+    "provider_name": "JinaAI",
+    "provider_logo": "https://jina.ai/favicon.ico",
+    "base_url": "https://api.jina.ai/v1",
+    "website": "https://jina.ai",
+    "models": [
+      {
+        "model_id": "jina-embeddings-v3",
+        "model_name": "jina-embeddings-v3",
+        "type": "embedding",
+        "tags": ["embedding", "multilingual", "long-context", "MTEB-SOTA"],
+        "context_window": 8192,
+        "dimensions": 1024,
+        "note": "570M 参数，多语言，MTEB 长文本检索 SOTA，Late Chunking 官方推荐模型"
+      },
+      {
+        "model_id": "jina-embeddings-v2-base-en",
+        "model_name": "jina-embeddings-v2-base-en",
+        "type": "embedding",
+        "tags": ["embedding", "english", "long-context"],
+        "context_window": 8192,
+        "dimensions": 768,
+        "note": "英文嵌入，8192 token，Late Chunking 兼容"
+      },
+      {
+        "model_id": "jina-reranker-v2-base-multilingual",
+        "model_name": "jina-reranker-v2-base-multilingual",
+        "type": "embedding",
+        "tags": ["reranker", "multilingual"],
+        "note": "多语言 Reranker，RAG 精排阶段使用"
+      },
+      {
+        "model_id": "jina-clip-v2",
+        "model_name": "jina-clip-v2",
+        "type": "multimodal",
+        "tags": ["embedding", "multimodal", "image-text"],
+        "dimensions": 1024,
+        "note": "图文多模态嵌入，跨模态检索"
+      }
+    ]
+  },
+  {
+    "provider_id": "cohere",
+    "provider_name": "Cohere",
+    "provider_logo": "https://cohere.com/favicon.ico",
+    "base_url": "https://api.cohere.com/v2",
+    "website": "https://dashboard.cohere.com",
+    "models": [
+      {
+        "model_id": "command-r-plus-08-2024",
+        "model_name": "Command R+",
+        "type": "language",
+        "tags": ["RAG", "tool-use", "enterprise"],
+        "context_window": 128000,
+        "note": "企业 RAG 专项优化，原生支持 grounded generation"
+      },
+      {
+        "model_id": "command-r-08-2024",
+        "model_name": "Command R",
+        "type": "language",
+        "tags": ["RAG", "cost-effective"],
+        "context_window": 128000,
+        "note": "轻量 RAG 模型"
+      },
+      {
+        "model_id": "embed-multilingual-v3.0",
+        "model_name": "embed-multilingual-v3.0",
+        "type": "embedding",
+        "tags": ["embedding", "multilingual", "RAG"],
+        "dimensions": 1024,
+        "note": "多语言嵌入，RAG 检索优化，支持 int8 量化"
+      },
+      {
+        "model_id": "embed-english-v3.0",
+        "model_name": "embed-english-v3.0",
+        "type": "embedding",
+        "tags": ["embedding", "english", "RAG"],
+        "dimensions": 1024,
+        "note": "英文嵌入，高精度"
+      },
+      {
+        "model_id": "rerank-multilingual-v3.0",
+        "model_name": "rerank-multilingual-v3.0",
+        "type": "embedding",
+        "tags": ["reranker", "multilingual"],
+        "note": "多语言 Reranker，RAG 精排"
+      }
+    ]
+  },
+  {
+    "provider_id": "baidu",
+    "provider_name": "百度（文心）",
+    "provider_logo": "https://qianfan.baidubce.com/favicon.ico",
+    "base_url": "https://aip.baidubce.com/rpc/2.0/ai_custom/v1/wenxinworkshop",
+    "website": "https://qianfan.baidu.com",
+    "models": [
+      {
+        "model_id": "ernie-4.5-turbo-128k",
+        "model_name": "ERNIE 4.5 Turbo",
+        "type": "multimodal",
+        "tags": ["flagship", "multimodal", "long-context"],
+        "context_window": 128000,
+        "note": "文心旗舰版，支持图像输入"
+      },
+      {
+        "model_id": "ernie-4.5-8k",
+        "model_name": "ERNIE 4.5",
+        "type": "language",
+        "tags": ["balanced"],
+        "context_window": 8192,
+        "note": "通用版"
+      },
+      {
+        "model_id": "ernie-speed-128k",
+        "model_name": "ERNIE Speed",
+        "type": "language",
+        "tags": ["fast", "cost-effective"],
+        "context_window": 128000,
+        "note": "高速低成本版"
+      },
+      {
+        "model_id": "embedding-v1",
+        "model_name": "Embedding-V1",
+        "type": "embedding",
+        "tags": ["embedding", "chinese"],
+        "dimensions": 384,
+        "note": "中文嵌入模型"
+      },
+      {
+        "model_id": "bge-large-zh",
+        "model_name": "BGE Large ZH",
+        "type": "embedding",
+        "tags": ["embedding", "chinese", "BAAI"],
+        "dimensions": 1024,
+        "note": "BAAI 合作，中文检索效果强"
+      }
+    ]
+  },
+  {
+    "provider_id": "zhipu",
+    "provider_name": "智谱（GLM）",
+    "provider_logo": "https://open.bigmodel.cn/favicon.ico",
+    "base_url": "https://open.bigmodel.cn/api/paas/v4",
+    "website": "https://open.bigmodel.cn",
+    "models": [
+      {
+        "model_id": "glm-4-plus",
+        "model_name": "GLM-4 Plus",
+        "type": "multimodal",
+        "tags": ["flagship", "multimodal", "long-context"],
+        "context_window": 128000,
+        "note": "旗舰多模态，支持图像/文档输入"
+      },
+      {
+        "model_id": "glm-4-flash",
+        "model_name": "GLM-4 Flash",
+        "type": "language",
+        "tags": ["fast", "free"],
+        "context_window": 128000,
+        "note": "免费额度可用，高速推理"
+      },
+      {
+        "model_id": "glm-4-long",
+        "model_name": "GLM-4 Long",
+        "type": "language",
+        "tags": ["long-context"],
+        "context_window": 1000000,
+        "note": "1M 超长上下文专项"
+      },
+      {
+        "model_id": "embedding-3",
+        "model_name": "Embedding-3",
+        "type": "embedding",
+        "tags": ["embedding", "chinese", "multilingual"],
+        "dimensions": 2048,
+        "note": "最新嵌入模型，中英文双语优化"
+      }
+    ]
+  },
+  {
+    "provider_id": "local_ollama",
+    "provider_name": "本地（Ollama）",
+    "provider_logo": "https://ollama.ai/favicon.ico",
+    "base_url": "http://localhost:11434/v1",
+    "website": "https://ollama.com",
+    "models": [
+      {
+        "model_id": "qwen3:8b",
+        "model_name": "Qwen3 8B (本地)",
+        "type": "language",
+        "tags": ["local", "open-weight", "thinking"],
+        "context_window": 32768,
+        "note": "本地推理，支持 thinking 模式"
+      },
+      {
+        "model_id": "deepseek-r1:8b",
+        "model_name": "DeepSeek R1 8B (本地)",
+        "type": "language",
+        "tags": ["local", "open-weight", "reasoning"],
+        "context_window": 32768,
+        "note": "R1 蒸馏版，单卡可运行"
+      },
+      {
+        "model_id": "llama3.3:70b",
+        "model_name": "Llama 3.3 70B (本地)",
+        "type": "language",
+        "tags": ["local", "open-weight", "meta"],
+        "context_window": 128000,
+        "note": "Meta 开源模型，需要较大显存"
+      },
+      {
+        "model_id": "nomic-embed-text",
+        "model_name": "nomic-embed-text (本地)",
+        "type": "embedding",
+        "tags": ["embedding", "local", "open-weight"],
+        "dimensions": 768,
+        "note": "本地嵌入模型，零 API 成本"
+      },
+      {
+        "model_id": "mxbai-embed-large",
+        "model_name": "mxbai-embed-large (本地)",
+        "type": "embedding",
+        "tags": ["embedding", "local", "high-accuracy"],
+        "dimensions": 1024,
+        "note": "高精度本地嵌入"
+      }
+    ]
+  }
+]

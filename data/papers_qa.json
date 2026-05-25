@@ -1,0 +1,42 @@
+[
+  {
+    "question": "Meta-Chunking 使用什么信号检测文本逻辑边界？",
+    "expected_in_chunk": "Perplexity Chunking",
+    "paper_id": "meta_chunking"
+  },
+  {
+    "question": "Late Chunking 的核心流程是什么？",
+    "expected_in_chunk": "first embed all tokens of the long text, with chunking applied after the transformer model",
+    "paper_id": "late_chunking"
+  },
+  {
+    "question": "Dense X Retrieval 提出的检索单元是什么？",
+    "expected_in_chunk": "proposition",
+    "paper_id": "dense_x_retrieval"
+  },
+  {
+    "question": "RAPTOR 如何组织文档层次？",
+    "expected_in_chunk": "recursively embedding, clustering, and summarizing chunks of text, constructing a tree",
+    "paper_id": "raptor"
+  },
+  {
+    "question": "CRAG 基准测试的结论是什么？",
+    "expected_in_chunk": "computational costs associated with semantic chunking are not justified",
+    "paper_id": "crag_benchmark"
+  },
+  {
+    "question": "ColBERT 的检索匹配发生在什么粒度？",
+    "expected_in_chunk": "fine-grained similarity",
+    "paper_id": "colbert"
+  },
+  {
+    "question": "HOPE 指标评估分块质量的几个层次？",
+    "expected_in_chunk": "three levels",
+    "paper_id": "hope"
+  },
+  {
+    "question": "Summary-Augmented Chunking 要解决什么失败模式？",
+    "expected_in_chunk": "Document-Level Retrieval Mismatch (DRM)",
+    "paper_id": "sac"
+  }
+]

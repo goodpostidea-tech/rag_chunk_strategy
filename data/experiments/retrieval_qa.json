@@ -1,0 +1,27 @@
+[
+  {
+    "question": "FloTorch 2026 测试中递归字符分割的准确率大约是多少？",
+    "expected_in_chunk": "69%",
+    "query_type": "keyword"
+  },
+  {
+    "question": "语义分块如果不设最小 chunk 下限会出现什么问题？",
+    "expected_in_chunk": "碎片化",
+    "query_type": "semantic"
+  },
+  {
+    "question": "微软 Azure 推荐的 chunk size 和 overlap 起点是多少？",
+    "expected_in_chunk": "512",
+    "query_type": "factual"
+  },
+  {
+    "question": "混合检索通常如何融合稠密检索和 BM25 的结果？",
+    "expected_in_chunk": "RRF",
+    "query_type": "semantic"
+  },
+  {
+    "question": "Contextual Retrieval 由哪家公司提出？",
+    "expected_in_chunk": "Anthropic",
+    "query_type": "keyword"
+  }
+]

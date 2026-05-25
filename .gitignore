@@ -1,0 +1,53 @@
+# Python
+.venv/
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+*.egg-info/
+dist/
+build/
+
+# 环境变量与密钥（仅提交 .env.example）
+.env
+.env.*
+!.env.example
+
+# 本地 SQLite 与向量索引产物
+data/chunk_lab.db
+data/chunk_lab.db-*
+data/chunk_lab.db-journal
+data/indexes/
+*.db
+*.sqlite
+*.sqlite3
+
+# 运行时缓存与用户数据
+data/papers/*.txt
+data/papers/*.meta.json
+data/papers/**/*.pdf
+!data/papers/.gitkeep
+data/parse_samples/
+data/custom_qa.json
+
+# 向量库本地持久化
+.chroma/
+.chroma_chunk_lab/
+
+# IDE / 编辑器 / AI 助手
+.idea/
+.vscode/
+*.swp
+*.swo
+.DS_Store
+Thumbs.db
+.claude/
+.cursor/
+
+# 日志
+*.log
+logs/

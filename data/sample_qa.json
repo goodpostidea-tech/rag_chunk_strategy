@@ -1,0 +1,22 @@
+[
+  {
+    "question": "FloTorch 2026 测试中递归字符分割的准确率大约是多少？",
+    "expected_answer": "69%",
+    "expected_in_chunk": "69%"
+  },
+  {
+    "question": "语义分块不设下限时的平均 token 大约多少？",
+    "expected_answer": "43",
+    "expected_in_chunk": "43"
+  },
+  {
+    "question": "Parent-Child 策略中小 chunk 大约多少 token？",
+    "expected_answer": "200",
+    "expected_in_chunk": "200"
+  },
+  {
+    "question": "Semantic Chunker 建议的最小 chunk size 是多少 token？",
+    "expected_answer": "150",
+    "expected_in_chunk": "150"
+  }
+]
